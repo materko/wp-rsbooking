@@ -34,7 +34,7 @@ docker compose run --rm cli wp eval-file /dev-scripts/tests/f2-online.php
 docker compose run --rm cli sh -c "wp db query < /dev-scripts/tests/f3-reset.sql && wp eval-file /dev-scripts/tests/f3.php"
 ```
 
-Balík na inštaláciu: `python dev/build-zip.py` → `dist/rezervacie-<verzia>.zip`.
+Balík na inštaláciu: `python dev/build-zip.py` → `dist/rezervacie-<verzia>.zip`, overenie čistou inštaláciou: `sh dev/test-zip.sh <verzia>` (vo WSL).
 
 ## Štruktúra
 
